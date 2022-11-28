@@ -102,7 +102,7 @@ export default {
       var submitData = new FormData();
       submitData.append("file", this.file);
       this.resultData = await (
-        await axios.post("http://localhost:8000/chat", submitData, {
+        await axios.post("http://3.39.177.150:8080/chat", submitData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
